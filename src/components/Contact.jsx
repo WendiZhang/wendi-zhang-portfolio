@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const FORM_ENDPOINT =
-  "import.meta.env.VITE_FORM_ENDPOINT";
+  import.meta.env.VITE_FORM_ENDPOINT;
 
 export default function Contact() {
   const [status, setStatus] = useState("idle");
