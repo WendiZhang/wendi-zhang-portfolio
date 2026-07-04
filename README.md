@@ -8,7 +8,7 @@ Built with React, Vite, and Tailwind CSS.
 
 ## Live Website
 
-https://your-vercel-link.vercel.app
+https://wendi-zhang-portfolio-hoiqgoilw-wendizhang-5001s-projects.vercel.app
 
 ---
 
