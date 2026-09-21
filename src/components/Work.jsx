@@ -3,6 +3,32 @@ import { useState } from "react";
 
 const projects = [
   {
+    name: "AI Document Platform",
+    category: "AI Document App",
+    description:
+      "Upload and process PDF/DOCX documents, generate vector embeddings, and ask questions using semantic search and RAG.",
+    images: [
+      {
+        src: "/assets/ai-document-platform-1.png",
+        caption: "Document processing dashboard",
+      },
+      {
+        src: "/assets/ai-document-platform-2.png",
+        caption: "Document upload/processing flow",
+      },
+      {
+        src: "/assets/ai-document-platform-3.png",
+        caption: "AI Chat interface",
+      },
+    ],
+    imageRatio: "aspect-[3034/1540]",
+    link: "http://16.54.70.41/login",
+    github: "https://github.com/WendiZhang/ai-document-platform",
+    color: "bg-[#d9e4f2]",
+    mediaColor: "bg-[#e3e9f1]",
+    tech: ["React + TypeScript", "FastAPI", "PostgreSQL + pgvector", "AWS"],
+  },
+  {
     name: "Career Copilot",
     category: "AI Career Platform",
     description:
@@ -188,7 +214,11 @@ function ProjectCard({ project, index }) {
           </div>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-3 border-t border-ink/20 pt-[18px] max-sm:grid-cols-1">
+        <div
+          className={`mt-10 grid gap-3 border-t border-ink/20 pt-[18px] max-sm:grid-cols-1 ${
+            project.github ? "grid-cols-2" : "grid-cols-1"
+          }`}
+        >
           <a
             className="group/live flex min-h-[48px] items-center justify-between rounded-full border border-ink/15 bg-white/70 px-5 text-sm font-semibold text-[#131514] shadow-sm transition hover:-translate-y-0.5 hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink motion-reduce:transition-none"
             href={project.link}
@@ -201,22 +231,24 @@ function ProjectCard({ project, index }) {
             </span>
           </a>
 
-          <a
-            className="group/github flex min-h-[48px] items-center justify-between rounded-full border border-ink/25 bg-white/25 px-5 text-sm font-semibold transition hover:-translate-y-0.5 hover:bg-white/45 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink motion-reduce:transition-none"
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-            <svg
-              className="h-[18px] w-[18px] transition-transform group-hover/github:scale-105 motion-reduce:transition-none"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
+          {project.github && (
+            <a
+              className="group/github flex min-h-[48px] items-center justify-between rounded-full border border-ink/25 bg-white/25 px-5 text-sm font-semibold transition hover:-translate-y-0.5 hover:bg-white/45 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink motion-reduce:transition-none"
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
             >
-              <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.64-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.96a9.3 9.3 0 0 1 2.5.35c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.23 10.23 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
-            </svg>
-          </a>
+              GitHub
+              <svg
+                className="h-[18px] w-[18px] transition-transform group-hover/github:scale-105 motion-reduce:transition-none"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.64-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.96a9.3 9.3 0 0 1 2.5.35c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.23 10.23 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
+              </svg>
+            </a>
+          )}
         </div>
       </div>
     </article>

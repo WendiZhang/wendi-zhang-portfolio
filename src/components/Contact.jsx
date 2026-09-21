@@ -64,14 +64,14 @@ export default function Contact() {
           </span>
 
           <h2 className="font-display text-[clamp(46px,6vw,78px)] font-medium leading-[0.98] tracking-[-0.06em] text-[#131514]">
-            Let's build something great together.
+            Let&apos;s build something great together.
           </h2>
 
           <p className="mb-8 mt-7 max-w-[500px] text-lg leading-8 text-[#514765]">
-            I'm currently open to full-stack developer, frontend developer, and
-            AI application developer opportunities. Whether you're hiring,
+            I&apos;m currently open to full-stack developer, frontend developer, and
+            AI application developer opportunities. Whether you&apos;re hiring,
             building a product, or looking for someone to create modern web
-            applications with AI-powered features, I'd love to hear from you.
+            applications with AI-powered features, I&apos;d love to hear from you.
           </p>
 
           <a
