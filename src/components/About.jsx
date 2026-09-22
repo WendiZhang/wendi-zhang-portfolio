@@ -48,7 +48,7 @@ export default function About() {
           </div>
 
           <p className="mb-1 text-lg leading-8 text-[#5f675f]">
-            I’m a full-stack developer with 7+ years of web development
+            I’m a full-stack developer with over 8 years of web development
             experience. I build modern applications with React, Python, and AI,
             creating intuitive user experiences, scalable backends, and
             intelligent features that solve real-world problems.
