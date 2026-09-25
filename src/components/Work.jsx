@@ -112,7 +112,7 @@ const projects = [
       },
     ],
     imageRatio: "aspect-[3024/1722]",
-    link: "https://smart-task-manager-ebon.vercel.app",
+    link: "https://smart-task-manager-kappa-topaz.vercel.app",
     github: "https://github.com/WendiZhang/smart-task-manager",
     color: "bg-[#d9d5ed]",
     mediaColor: "bg-[#e2e0ed]",
