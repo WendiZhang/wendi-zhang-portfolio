@@ -20,8 +20,14 @@ export default function LenisScroll() {
 
     animationFrame = requestAnimationFrame(raf);
 
+    const initialHashFrame = requestAnimationFrame(() => {
+      const target = document.getElementById(window.location.hash.slice(1));
+      if (target) lenis.scrollTo(target, { immediate: true, offset: -80 });
+    });
+
     return () => {
       cancelAnimationFrame(animationFrame);
+      cancelAnimationFrame(initialHashFrame);
       lenis.destroy();
     };
   }, []);

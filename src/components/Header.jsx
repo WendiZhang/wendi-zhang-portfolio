@@ -2,10 +2,10 @@ export default function Header() {
   return (
     <header
       id="top"
-      className="relative flex min-h-[820px] scroll-mt-16 items-center overflow-hidden bg-[#151918] text-white max-md:min-h-[760px]"
+      className="relative flex min-h-[820px] scroll-mt-16 items-center overflow-hidden bg-[#0b0f14] bg-[url('/assets/digital-hero-background.png')] bg-cover bg-center text-white max-md:min-h-[760px] max-md:bg-[position:62%_center]"
     >
       <div
-        className="pointer-events-none absolute inset-0 bg-grid bg-[length:72px_72px] opacity-25 [mask-image:linear-gradient(to_bottom,black,transparent_90%)]"
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(8,12,17,0.84)_0%,rgba(8,12,17,0.63)_48%,rgba(8,12,17,0.18)_100%),linear-gradient(0deg,rgba(8,12,17,0.72)_0%,transparent_42%)] max-md:bg-[linear-gradient(90deg,rgba(8,12,17,0.9)_0%,rgba(8,12,17,0.72)_70%,rgba(8,12,17,0.42)_100%),linear-gradient(0deg,rgba(8,12,17,0.78)_0%,transparent_48%)]"
         aria-hidden="true"
       />
 
